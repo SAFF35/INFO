@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Smart Affiliate Future</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: linear-gradient(135deg, #8a2be2, #87ceeb, #ff69b4);
+      color: black;
+      margin: 0;
+      overflow-x: hidden;
+    }
+
+    header {
+      text-align: center;
+      font-size: 2em;
+      font-weight: bold;
+      font-family: 'Rubik', sans-serif;
+      color: #000;
+      text-shadow: 1px 1px 1px #fff;
+      background: linear-gradient(to bottom, #1E90FF, #6495ED);
+      padding: 6.5px 0;
+      position: sticky;
+      top: 0;
+      z-index: 999;
+    }
+
+    nav {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 10px;
+      background: linear-gradient(to bottom, #84D1CC, #20B2AA);
+      padding: 2px;
+      border: none;
+      position: sticky;
+      top: 61px;
+      z-index: 700;
+    }
+
+    nav a {
+      display: block;
+      background: linear-gradient(to bottom, #84D1CC, #20B2AA);
+      border: none;
+      padding: 2px 10px;
+      color: #0000CD;
+      text-decoration: none;
+      font-size: 1em;
+      font-weight: bold;
+      border-radius: 6px;
+      text-align: center;
+    }
+
+    nav a:hover {
+      background: linear-gradient(to bottom, #00FA9A, #00FA9A);
+      color: #FFFFFF;
+    }
+
+    .welcome-animation {
+      text-align: left;
+      font-size: 1.7em;
+      font-family: 'Rubik', sans-serif;
+      color: #8B0000;
+      text-shadow: 2px 2px 4px #fff;
+      margin: 12px 0;
+      overflow: hidden;
+      white-space: nowrap;
+    }
+
+    .welcome-animation span {
+      display: inline-block;
+      animation: scroll-text 12s linear infinite;
+    }
+
+    @keyframes scroll-text {
+      0% { transform: translateX(100%); }
+      100% { transform: translateX(-100%); }
+    }
+
+    .logo-small {
+      display: block;
+      max-width: 35%;
+      margin: 10px auto;
+    }
+
+    .logo-large {
+      display: block;
+      max-width: 85%;
+      margin: 1px auto;
+    }
+
+    .content {
+      max-width: 90%;
+      margin: 30px auto;
+      padding: 20px;
+      background-color: #FFFFFF;
+      box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+      border-radius: 12px;
+      font-weight: bold;
+      color: #000;
+      line-height: 1.8;
+      text-align: center;
+    }
+
+    .content p {
+      margin: 10px 0;
+      padding: 0 10px;
+      text-align: left;
+    }
+
+    h3 {
+      font-size: 1.5em;
+      font-weight: bold;
+      color: #000;
+      text-align: center;
+    }
+
+    h4 {
+      font-size: 1.3em;
+      font-weight: bold;
+      color: #000;
+      text-align: center;
+    }
+
+    p {
+      text-align: left;
+      color: #000;
+    }
+
+    /* Tombol: tidak terlalu lebar, posisinya di tengah, dengan animasi blink.
+       Hanya perubahan: tombol diatur sebagai block dengan lebar sesuai isi teks agar selalu berada di tengah. */
+    .button {
+      display: block;
+      width: fit-content;
+      padding: 7px 12px;
+      margin: 5px auto;
+      color: #000;
+      text-decoration: none;
+      border: 2px solid #87CEEB;
+      border-radius: 6px;
+      text-align: center;
+      animation: blink 2s infinite;
+    }
+
+    @keyframes blink {
+      0% { background-color: #EE82EE; }   /* Ungu cerah */
+      33% { background-color: #00FF00; }   /* Hijau cerah */
+      66% { background-color: #1E90FF; }   /* Biru langit cerah */
+      100% { background-color: #EE82EE; }
+    }
+
+    /* Untuk kotak bonus, gunakan display: inline-block agar lebar sesuai isi teks */
+    .bonus-box {
+      border: 2px solid #1E90FF;
+      padding: 7px;
+      margin: 0 auto;
+      text-align: center;
+      color: #000;
+      background: linear-gradient(90deg, #87CEEB, #ffffff);
+      border-radius: 10px;
+      display: inline-block;
+    }
+
+    /* Style tambahan untuk h4 footer agar tidak rapat dengan pinggir layar */
+    .footer-h4 {
+      margin-left: 20px;
+      margin-right: 20px;
+      font-size: 1.3em;
+    }
+  </style>
+
+  <style>
+    body, p, h1, h2, h3, h4, h5, h6, div, span, ul, li, button {
+      /* Tidak ada tambahan */
+    }
+  </style>
+</head>
+<body>
+  <header>
+    Info dan Pengumuman
+  </header>
+  <nav>
+    <a href="https://SAFF35.github.io/Dashboar">Home</a>
+    <a href="https://SAFF35.github.io/Pencairan">Withdraw</a>
+    <a href="https://SAFF35.github.io/Bonus">3 Bonus</a>
+    <a href="https://SAFF35.github.io/Toko">Toko</a>
+    <a href="https://SAFF35.github.io/Info">Info</a>
+  </nav>
+  <div class="welcome-animation">
+    <span><Pelajari, Terapkan dan Berkembang></b></span>
+  </div>
+  <img class="logo-small" src="https://affiliate035.wordpress.com/wp-content/uploads/2025/01/20250113_192723.png?w=768" alt="Logo Smart Affiliate Future">
+  <br>
+  <img class="logo-large" src="https://affiliate035.wordpress.com/wp-content/uploads/2024/12/20241128_204611.png?w=768" alt="Platform SAF">
+   <br>
+  <!-- Konten tambahan: Informasi Pencairan Komisi & Bonus serta Bonus Detail -->
+  <div class="content">
+      <p>Untuk Pencairan Komisi dan Penarikan Bonus bisa melalui Rekening Bank atau Ewallet (Dana, Ovo, Shopee Pay dll) dan bagi yang belum memilikinya bisa melalui Rekening Bank atau Ewallet teman/saudara atau melalui konter yang menerima transfer &amp; pencairan.</p>
+      <br>
+    <h3 style="text-align: center;">❇️ BONUS SPESIAL</h3>
+    <p></p>
+    <div class="bonus-box">
+      <b>Bonus Spesial 1</b>
+    </div>
+    <p>Jika anggota Anda di Generasi ke 2-10 berjumlah 1.000 anggota maka Anda mendapatkan Bonus Spesial 1 yaitu Uang Rp 1 juta.</p>
+    <div class="bonus-box">
+      <b>Bonus Spesial 2</b>
+    </div>
+    <p>Jika anggota Anda di Generasi ke 2-10 berjumlah 10.000 anggota maka Anda mendapatkan Bonus Spesial 2 yaitu 1 unit Handphone atau Uang Rp 10 juta (bebas memilih).</p>
+    <div class="bonus-box">
+      <b>Bonus Spesial 3</b>
+    </div>
+    <p>Jika anggota Anda di Generasi ke 2-10 berjumlah 100.000 anggota maka Anda mendapatkan Bonus Spesial 3 yaitu Umroh Plus + uang saku 5 juta (untuk 1 orang) atau 1 Unit Motor Yamaha Nmax atau Uang Rp 40 juta (bebas memilih).</p>
+    <div class="bonus-box">
+      <b>Bonus Spesial 4</b>
+    </div>
+    <p>Jika anggota Anda di Generasi ke 2-10 berjumlah 1.000.000 anggota maka Anda mendapatkan Bonus Spesial 4 yaitu 1 unit Mobil Pajero atau Haji Plus untuk 2 orang + uang saku 40 juta atau Uang Rp 300 juta (bebas memilih).</p>
+    <div class="bonus-box">
+      <b>Bonus Spesial 5</b>
+    </div>
+    <p>Jika anggota Anda di Generasi ke 2-10 berjumlah 10.000.000 anggota maka Anda mendapatkan Bonus Spesial 5 yaitu 1 Unit Rumah Mewah atau Uang Rp 3 Milyar (bebas memilih).</p>
+    <br>
+    <h3 style="text-align: center;">❇️ BONUS TAMBAHAN</h3>
+    <p></p>
+    <div class="bonus-box">
+      <b>Bonus Tambahan 1</b>
+    </div>
+    <p>Jika anggota Anda di Generasi ke 1 berjumlah 5 anggota maka Anda mendapatkan Bonus Tambahan 1 yaitu Akses 3 Ebook Gratis (Seharga ±Rp 250.000,-), lihat di daftar Ebook Bonus cara penarikannya.</p>
+    <div class="bonus-box">
+      <b>Bonus Tambahan 2</b>
+    </div>
+    <p>Jika anggota Anda di Generasi ke 1 berjumlah 10 anggota maka Anda mendapatkan Bonus Tambahan 2 yaitu Akses 3 Ebook Gratis lagi (Seharga ±Rp 250.000,-), lihat di daftar Ebook Bonus cara penarikannya.</p>
+    <div class="bonus-box">
+      <b>Bonus Tambahan 3</b>
+    </div>
+    <p>Jika anggota Anda di Generasi ke 2-10 berjumlah 100 anggota maka Anda mendapatkan Bonus Tambahan 3 yaitu Akses Kursus atau Pembelajaran Online (Senilai Rp 350.000,-), lihat di daftar kursus cara penarikannya.</p>
+    <br>
+    <h3 style="text-align: center;">❇️ BONUS CUMA-CUMA</h3>
+    <p></p>
+    <p>Bagi semua Anggota Basic yang membeli Produk SAF (upgrade menjadi anggota Premium) sebelum 3 hari daftar di SAF, akan mendapatkan Bonus Cuma-cuma yaitu:</p>
+    <p>📢 Gratis Website Replika Promosi premium seharga Rp 500.000,-. Website ini memudahkan promosi dengan terhubung langsung ke link referral dan nomor WhatsApp Anda. Setelah 3 hari, bonus ini akan berubah menjadi website replika umum.</p>
+    <p><a href="https://SAFF35.github.io/Home" class="button">👉 Contoh Website Promosi</a></p>
+    <p>📢 Gratis ratusan link Grup WhatsApp atau ribuan nomor WhatsApp aktif (seharga Rp 250.000,-) untuk mempromosikan link referral Anda.</p>
+    <p>📢 Gratis bimbingan digital marketing bisnis SAF dari 0 sampai bisa.</p>
+    <p>📢 Gratis 1 Ebook Produk SAF (lihat di Toko).</p>
+    <p>🔜 Total bonus ini bernilai sekitar ±Rp 1 juta.</p>
+    <p>✔️ Bagi Anda yang berhak mendapatkan Bonus Cuma-cuma, klik tombol di bawah ini:</p>
+    <p><a href="https://Wa.me/6289522704503?text=Hallo%20Admin%20SAFF%20saya%20ingin%20mengambil%20Bonus%20Cuma-cuma%20karena%20saya%20daftar/bergabung%20pada%20hari%20pertama%20mendapatkan%20info%20SAFF,%20Bagaimana%20caranya?" class="button">👉 BONUS CUMA-CUMA</a></p>
+    <p>❌️ Jika Anda telah melewati batas promo 3 hari namun ingin mendapatkan semua Bonus Cuma-cuma, bonus dapat dibeli dengan harga diskon Rp 50.000,- (tanpa Ebook) dalam promo 10 hari. Setelah 10 hari, harga menjadi standar (tetap ada diskon Rp 499.000,-). Klik tombol di bawah ini:</p>
+    <p><a href="https://Wa.me/6289522704503?text=Hallo%20Admin%20SAFF%20saya%20ingin%20membeli%20Bonus%20Cuma-cuma%20harga%20diskon%20Rp%2050.000,-%20sebelum%2010%20hari.%20Bagaimana%20caranya?" class="button">👉 BELI BONUS CUMA-CUMA</a></p>
+  </div>
+
+
+<style>
+.text-box {
+background-color: white;
+border-radius: 10px;
+padding: 20px;
+margin: 20px auto;
+width: 80%;
+box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+text-align: left;
+}
+.text-box h5 {
+font-size: 1rem;
+color: black;
+margin: 0;
+}
+</style>
+
+<div class="text-box">
+<h5><strong>Info Penting untuk Semua Mitra</strong>
+
+
+Eksplorasi dan Maksimalkan Fitur Member Area.
+Kami mengingatkan seluruh mitra untuk menjelajahi dan mempelajari semua fitur yang telah kami sediakan di Member Area. Semua informasi, panduan, dan alat pendukung sudah tersedia secara lengkap untuk membantu Anda sukses dalam bisnis ini.
+
+
+
+Di Member Area, Anda dapat menemukan:
+- Panduan Penjualan: Strategi dan tips untuk meningkatkan hasil penjualan Anda.
+- Laporan Penjualan & Komisi: Pantau pendapatan Anda secara real-time.
+- Materi Promosi: Download gambar, video, dan template untuk membantu pemasaran Anda.
+- Update & Pengumuman Penting: Informasi terbaru tentang bisnis, produk, atau program kami.
+- Pusat Bantuan: Tanya jawab, tutorial, dan kontak support kami jika Anda membutuhkan bantuan.
+</h5>
+</div>
+
+
+  
+    <a href="https://SAFF35.github.io/Dashboard" class="button"><b>KEMBALI KE HOME</b></a>
+  <br>
+  <h4 class="footer-h4"><b>Raih impian Anda menuju kebebasan finansial dan kesejahteraan dengan passive income.</b></h4>
+  <h4 class="footer-h4"><b>Salam sukses untuk semuanya.</b></h4>
+  <br>
+  <h4>__________________</h4>
+</body>
+</html>
